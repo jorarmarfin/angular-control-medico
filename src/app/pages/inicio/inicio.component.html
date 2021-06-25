@@ -1,0 +1,7 @@
+<p>inicio works!</p>
+<ul>
+    <li *ngFor="let item of miembros">{{ item.nombres }} - {{ item.id }} <button (click)="delete(item.id)" >eliminar </button>  | 
+        <button (click)="actualizar(item.id)">Actualizar</button>
+    </li>
+</ul>
+<button (click)="agregar()">Agregar</button>
