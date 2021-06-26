@@ -13,6 +13,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { EscritorioComponent } from './pages/escritorio/escritorio.component';
 import { HistorialComponent } from './pages/historial/historial.component';
 import { HistorialDetalleComponent } from './pages/historial-detalle/historial-detalle.component';
+import { MiembroComponent } from './pages/miembro/miembro.component';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,16 @@ import { HistorialDetalleComponent } from './pages/historial-detalle/historial-d
     LoginComponent,
     EscritorioComponent,
     HistorialComponent,
-    HistorialDetalleComponent
+    HistorialDetalleComponent,
+    MiembroComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
